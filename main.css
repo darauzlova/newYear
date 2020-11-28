@@ -1,0 +1,169 @@
+body{
+	background-image: url(fon1.jpg);
+}
+ .content{
+ 	display: block;
+ 	position: absolute;
+ 	left: 5%;
+ 	text-align: center;
+ 	padding: 10px;
+    background-color: rgba(255, 255, 255, 0.603);
+    box-shadow: 5px 7px 11px #00000075;
+    opacity: 90%;
+    width: 90%;
+    height: auto;
+    z-index: 1;}
+.zag{
+    	font-size: 100pt;} 
+#hr1{
+	border: none;
+	color: red;
+	background-color: red;
+	height: 2%;
+}
+#hr1:nth-child(3){
+	height: 1%;
+	color: green;
+	background-color: green;
+}
+#hr1:nth-child(4){
+height: 0.55%;
+}
+.content2{
+	display: flex;
+	flex-grow: 2;
+	justify-content: space-around;
+}
+.container {
+    display:inline-block;   
+    position:relative;
+}
+.container div { 
+    display: none;
+    position: absolute; 
+    bottom: 10px; left: 0px; 
+    background-color: rgba(0,0,0,.4); 
+    padding: 5px 5px 5px 10px;
+    color: white;
+    font-family: cursive;
+    font-size: 15pt;
+}
+.container:hover div {
+    display: block 
+}
+h2{
+	font-family: cursive;
+	background-color: white;
+	font-size: 20pt;
+	border-width: 2px;
+	border-color: red; 
+}
+#hr{
+	border: none;
+	background-color: red;
+	color: red;
+	height: 3pt;
+}
+.f_f{
+display: flex;
+justify-content: space-between;
+}
+.fact{
+	width: 50%;
+	height: 40%;
+	background-color: rgba(255,0,0,.4); 
+    padding: 5px 5px 5px 10px;
+    font-family: cursive;
+    font-size: 15pt;
+    display: inline-block;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+.fact:hover{
+	background-color:  rgba(0,100,0,.6);
+	-webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+#filmZag{
+	font-size: 25pt;
+	font-family: cursive;
+	background-color: rgba(0,100,0,.6);
+	color: red;
+}
+.film1{
+	background-color: white;
+	width: 100%;
+	font-size: 15pt;
+	font-family: cursive;
+	display: inline-block;
+	margin-bottom: 2%;
+}
+.filim{
+	width: 35%;
+	height: 15%;
+	display: inline-block;
+	float: right;
+	margin-right: 3%;
+	margin-bottom: 3%;
+}
+.filim1{
+	width: 35%;
+	height: 15%;
+	display: inline-block;
+	float: left;
+	margin-left:  3%;
+	margin-bottom: 3%;
+}
+
+
+/*slade*/
+
+#slides {
+    position: relative;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+
+
+}
+ 
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+ 
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+ 
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+a{
+ color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(212,75,56); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+  
+
+} 
+a:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+a:active { background: rgb(152,15,0); }
+}
